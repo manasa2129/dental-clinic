@@ -1,11 +1,13 @@
 # Node dependencies
 node_modules/
-client/node_modules/
-server/node_modules/
 
 # Production builds
 build/
 dist/
+
+# Deployment platforms
+.vercel/
+.render/
 
 # Logs
 logs/
@@ -18,10 +20,7 @@ Thumbs.db
 
 # Environment variables
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
 
 # IDE / Editor settings
 .vscode/
@@ -41,5 +40,10 @@ Thumbs.db
 # Optional eslint cache
 .eslintcache
 
-# Coverage directory used by testing tools
+# Test coverage
 coverage/
+
+# Local database or upload folders
+uploads/
+data/
+dump/
